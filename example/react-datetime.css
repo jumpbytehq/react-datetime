@@ -220,3 +220,11 @@ td.rdtYear:hover {
 .rdtDayPart {
   margin-top: 43px;
 }
+
+button.rdtClear {
+  position: absolute;
+  right: 5px;
+  height: 100%;
+  border: none;
+  background: transparent;
+ }

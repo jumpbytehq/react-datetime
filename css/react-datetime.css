@@ -211,3 +211,11 @@ td.rdtYear:hover {
   font-size: 1.2em;
   margin-top: 37px;
 }
+
+button.rdtClear {
+  position: absolute;
+  right: 5px;
+  height: 100%;
+  border: none;
+  background: transparent;
+ }
