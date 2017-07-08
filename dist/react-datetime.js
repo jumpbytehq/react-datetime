@@ -281,6 +281,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		clearInput: function () {
 			var clearedDate = '';
 			this.setState({ inputValue: clearedDate });
+			this.props.onChange(clearedDate);
 			return;
 		},
 
@@ -494,7 +495,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			if (this.state.open)
 				className += ' rdtOpen';
 
-			var clearButton = this.state.inputValue && this.props.clearable ? [DOM.button({ key: 'rdtButton', type: 'button', className: 'rdtClear', onClick: this.clearInput }, React.createElement(FaClearIcon, null))] : []
+			var clearButton = this.state.inputValue && this.props.clearable ? [DOM.button({ key: 'rdtButton', type: 'button', className: 'rdtClear', style: {backgroundColor: 'transparent', position: 'absolute', right: '5', height: '100%', border: 'none'}, onClick: this.clearInput }, React.createElement(FaClearIcon, null))] : [];
 
 			return DOM.div({ className: className }, children.concat(
 				clearButton,

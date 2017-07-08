@@ -220,6 +220,7 @@ var Datetime = createClass({
 	clearInput: function () {
 		var clearedDate = '';
 		this.setState({ inputValue: clearedDate });
+		this.props.onChange('');
 		return;
 	},
 
